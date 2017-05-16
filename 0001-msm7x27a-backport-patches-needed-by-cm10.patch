@@ -1,6 +1,6 @@
-From 0af02c7f322365d31999570da66306c00c8b8c00 Mon Sep 17 00:00:00 2001
+From b122cef10efca44dfe89a9dd102dccb29c6cd1af Mon Sep 17 00:00:00 2001
 From: grace5921 <androidlover5842@gmail.com>
-Date: Mon, 27 Feb 2017 10:10:41 +0530
+Date: Wed, 17 May 2017 01:53:12 +0530
 Subject: [PATCH] msm7x27a: backport patches needed by cm-10.1
 
 ---
@@ -398,8 +398,7 @@ Subject: [PATCH] msm7x27a: backport patches needed by cm-10.1
  system/core/init/Android.mk                        |    4 +-
  system/core/init/init.c                            |   13 +-
  system/core/init/property_service.c                |    6 +
- vendor/cm/config/common.mk                         |    2 +-
- 395 files changed, 83309 insertions(+), 518 deletions(-)
+ 394 files changed, 83308 insertions(+), 517 deletions(-)
  create mode 100644 frameworks/av/media/libstagefright/codecs/aacdec/SoftAAC.cpp
  create mode 100644 frameworks/av/media/libstagefright/codecs/aacdec/SoftAAC.h
  create mode 100644 frameworks/av/media/libstagefright/codecs/aacdec/aac_mem_funcs.h
@@ -87945,19 +87944,6 @@ index d3558e7..6e8cb5d 100755
  #ifdef CONTROL_PERMS_APPEND
  CONTROL_PERMS_APPEND
  #endif
-diff --git a/vendor/cm/config/common.mk b/vendor/cm/config/common.mk
-index a385b4f..be99ca1 100644
---- a/vendor/cm/config/common.mk
-+++ b/vendor/cm/config/common.mk
-@@ -115,7 +115,7 @@ PRODUCT_COPY_FILES += \
- # Terminal Emulator
- PRODUCT_COPY_FILES +=  \
-     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
--    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
-+    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm5.so:system/lib/libjackpal-androidterm5.so
- 
- # Bring in camera effects
- PRODUCT_COPY_FILES +=  \
 -- 
-2.11.0
+2.7.4
 
